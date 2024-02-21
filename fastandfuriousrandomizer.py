@@ -3,4 +3,10 @@ fast_movies = ["the_fast_and_the_furious" , "2_fast_2_furious" , "fast_and_furio
 
 import random
 
-print(random.choice(fast_movies))
+while True:
+  x = int(input('Press 1 to roll the Fast dice or 0 to quit the program!\n'))
+  if x == 1:
+    print(random.choice(fast_movies))
+  if x == 0:
+    print('Goodbye!')
+    break
